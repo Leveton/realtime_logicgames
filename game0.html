@@ -1,0 +1,58 @@
+<link href="assets/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="assets/css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="assets/css/jquery.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="assets/css/jquery.ui.core.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="assets/css/jquery.ui.theme.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="assets/css/base.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="assets/css/layout.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="assets/css/exercises.css" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+<script type="text/javascript" src="assets/js/underscore.js"></script>
+<script type="text/javascript" src="assets/js/backbone.js"></script>
+<script type="text/javascript" src="assets/js/widgetDialogPositionProgressbar.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="assets/js/draggableDroppable.min.js"></script>
+<script type="text/javascript" src="assets/js/d3.min.js"></script>
+<script type="text/javascript" src="assets/js/game0.js"></script>
+<script type="text/javascript" src="assets/js/backbonePuzzles.js"></script>
+
+<div id = 'demo_frame' style = 'width:60%;height:50%;'>
+<p>Drag the objects into the correct doll<br />
+
+1) Each doll must have at least one object<br />
+
+2) purple is not alone in a doll<br />
+
+3) No doll has the same amount of objects as its adjacent doll<br />
+
+4) pink is in a smaller doll than purple<br />
+
+5) yellow's doll touches only one other doll<br /></p>
+
+<div class="doll_block"><div class="doll_circle" style="z-index:4; position:absolute;background:red;" id = "red"></div></div>
+<div class="doll_block" style ="margin-left:90px;"><div class="doll_circle" style="z-index:4; position:absolute;background:yellow;" id = "yellow"></div></div>
+<div class="doll_block" style ="margin-left:180px;"><div class="doll_circle" style="z-index:4; position:absolute;background:purple;" id = "purple"></div></div>
+<div class="doll_block" style ="margin-left:270px;"><div class="doll_circle" style="z-index:4; position:absolute;background:pink" id = "pink"></div></div>
+
+
+<div class = demo_frame_bottom style = "height:370px;background:transparent;margin-top:50px;">
+<div class="droppable0" style="background:transparent;width:330px;" id = "1">
+	<p><img src="assets/images/bigDoll.png" alt="Doll"/></p>
+	<div class="droppable_midDoll" id = "2" ><p><img src="assets/images/middleDoll.png" alt="Doll"/></p>
+	  <div class="droppable_lilDoll" id = "3"><p><img src="assets/images/littleDoll.png" alt="Doll"/></p></div>
+	</div>
+</div>
+</div>
+<div style="clear:both;">
+<button class = "btn" onclick="compareAnswers(boxes, allboxes2, '#demo_frame', 'game2', 'game1', '#score_right_p');">check</button>
+
+<button class = "btn" style = "float:right;" onclick = "resetGame('#demo_frame', 'game1', '#score_right p', boxes);" >reset</button>
+</div>
+</div>
+
+<br>
+
+<div id ="score_right_timer" style = 'font-weight:bold;font-size:1.7em;'><strong></strong><p></p></div>
+<%= current_user %>

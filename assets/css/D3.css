@@ -1,0 +1,49 @@
+.chart{
+padding-left:20px;
+}
+.chart2{
+padding-left:20px;
+}
+.chart rect {
+  stroke: white;
+  fill: #34489E;
+
+}
+
+.chart text.bar {
+  fill: red;
+
+}
+
+.chart2 rect, .chart4 rect{
+  stroke: white;
+  fill: #ABBAD6;
+}
+.chart3 rect{
+ stroke: white;
+  fill: #102C31;
+}
+.chart2 text.bar, .chart4 text.bar{
+  fill: red;
+}
+.chart3 text.bar {
+  fill: red;
+}
+.user_chart{
+  width:460px;
+  height:200px;
+  margin-left: 35px;
+}
+.user_barchart, .user_barchart2, .user_barchart3, .user_barchart4, .user_barchart5{
+
+}
+.user_y_axis, .user_y_axis2, .user_y_axis3, .user_y_axis4, .user_y_axis5{
+position:absolute;
+}
+
+.prepcloud_barchart{
+
+}
+.prepcloud_y_axis, .prepcloud_y_axis2, .prepcloud_y_axis3, .prepcloud_y_axis4, .prepcloud_y_axis5{
+position:absolute;
+}

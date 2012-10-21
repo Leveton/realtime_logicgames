@@ -1,0 +1,41 @@
+<link href="assets/css/D3.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="assets/js/d3Puzzles.js"></script>
+
+<div id = 'demo_frame' style = 'width:70%;height:50%;'>
+<div id = "terrible_score1">< current_user.get_puzzle_times('Quarterback1', 0) %></div>
+<div id = "terrible_score2">< current_user.get_puzzle_times('Quarterback2', 0) %></div>
+<div id = "terrible_score3">< current_user.get_puzzle_times('Quarterback3', 0) %></div>
+<div id = "terrible_score4">< current_user.get_puzzle_times('Quarterback4', 0) %></div>
+<div id = "terrible_score5">< current_user.get_puzzle_times('Quarterback5', 0) %></div>
+<div id = "noire_attempts">< current_user.get_puzzle_attempts('Quarterback1', 0) %></div>
+<div id = "noire_resets">< current_user.get_puzzle_resets('Quarterback1', 0) %></div>
+<div id = "noire_attempts2">< current_user.get_puzzle_attempts('Quarterback2', 0) %></div>
+<div id = "noire_resets2">< current_user.get_puzzle_resets('Quarterback2', 0) %></div>
+<div id = "noire_attempts3">< current_user.get_puzzle_attempts('Quarterback3', 0) %></div>
+<div id = "noire_resets3">< current_user.get_puzzle_resets('Quarterback3', 0) %></div>
+<div id = "noire_attempts4">< current_user.get_puzzle_attempts('Quarterback4', 0) %></div>
+<div id = "noire_resets4">< current_user.get_puzzle_resets('Quarterback4', 0) %></div>
+<div id = "noire_attempts5">< current_user.get_puzzle_attempts('Quarterback5', 0) %></div>
+<div id = "noire_resets5">< current_user.get_puzzle_resets('Quarterback5', 0) %></div>
+
+<div style = 'display:table;'>
+<h2>Time per puzzle in seconds</h2>
+<div class = "puzzle_show_left"><div class = 'user_y_axis'></div></div>
+<div class = "puzzle_show_right"><div class = 'prepcloud_y_axis'></div></div>
+<h2>Attempts per puzzle</h2>
+<div class = "puzzle_show_left2"><div class = 'user_y_axis2'></div></div>
+<div class = "puzzle_show_right2"><div class = 'prepcloud_y_axis2'></div></div>
+<h2>Resets per puzzle</h2>
+<div class = "puzzle_show_left3"><div class = 'user_y_axis3'></div></div>
+<div class = "puzzle_show_right3"><div class = 'prepcloud_y_axis3'></div></div>
+</div>
+
+<div class="content"></div>
+
+</div>
+<button onclick="makePuzzle();">publish results</button>
+</div>
+
+
+
+

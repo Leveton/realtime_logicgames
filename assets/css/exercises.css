@@ -1,0 +1,577 @@
+#demo_frame{
+
+  }
+#demo_frame h1, #mootools_frame h1{
+
+}
+#mootools_frame{
+  float: left;
+  margin-left: 11px;
+  margin-right: 12px;
+  background-color: #FFF;
+  width: 560px!important;
+  height: 445px!important;
+  border: 2px solid #34489E;
+  overflow: scroll;
+}
+
+#demo_frame h2{
+
+}
+#demo_frame p, #mootools_frame p{
+
+  }
+.demo_frame_top {
+  float: left;
+  background-color: #FFF;
+  width: 560px;
+  height: 219px;
+}
+.demo_frame_top p{
+  margin: 10px;
+  font-size: 1.1em;
+  }
+.demo_frame_bottom {
+  background-color: #F5F5F5;
+
+}
+.demo_frame_bottom2 {
+  float: left;
+  background-color: #F5F5F5;
+  width: 470px;
+  height: 100px;
+}
+.droppable {
+  background-color: #27461F;
+  color: #ffffff;
+  width: 70px;
+  height: 70px;
+  padding: 0.5em;
+  float: left;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.droppable.ui-droppable{
+  }
+.droppable2, .droppable3, .pool1{
+  background-color: #27461F;
+  color: #ffffff;
+  width: 220px;
+  height: 170px;
+  padding: 0.5em;
+  float: left;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.droppable4 {
+  background-color: #27461F;
+  color: #ffffff;
+  width: 170px;
+  height: 170px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.droppable4b {
+  background-color: #000000;
+  color: #ffffff;
+  width: 75px;
+  height: 85px;
+  float: left;
+  margin-left: 5px;
+}
+.droppable0{
+  background-color: #27461F;
+  color: #ffffff;
+  width: 350px;
+  height: 350px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.droppable0b {
+  background-color: #000000;
+  color: #ffffff;
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 18px;
+}
+.droppable0b0 {
+  background-color: #ffffff;
+  color: #000000;
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-left: 5px;
+  margin-top: 8px;
+}
+.droppable_midDoll{
+  width: 250px;
+  height: 260px;
+  float: left;
+  margin-left: 42px;
+  background:transparent;
+  margin-top:-300px;
+  z-index:2;
+  position:absolute;
+}
+.droppable_lilDoll {
+  width: 150px;
+  height: 160px;
+  float: left;
+  margin-left: 44px;
+  background:transparent;
+  margin-top:-230px;
+  z-index:3;
+  position:absolute;
+}
+.doll_circle {
+display: block;
+display: block;
+width: 40px;
+height: 40px;
+background: red;
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+}
+.draggable, .draggable2, .mens_room{
+  text-align: center;
+  font-size: 1.7em;
+  background-color: #0E2A21;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px;
+}
+.draggable.ui-draggable{
+height:43px;
+  width:48px;
+}
+.draggable.ui-draggable p{
+  font-size:1.2em;
+}
+.resetGame{
+  text-align: center;
+  font-size: 1.1em;
+  background-color: #EEE;
+  height: 30px;
+  width: 75px;
+  position:relative;
+  bottom: 0;
+  float: left;
+  margin-bottom: 10px;
+  }
+.checkAnswer{
+   position:relative;
+   bottom: 0;
+   float: right;
+   margin-bottom: 10px;
+  }
+.sudokuAnswer{
+   position:absolute;
+   bottom: 0;
+   float: left;
+   margin-bottom: 10px;
+  }
+#exercise_form, #exercise_form_mootools{
+  overflow: auto;
+  display: table;
+  position: relative;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  }
+#exercise_form.hidden, #timesUp_form.hidden, #puzzles_hidden.hidden, #puzzle_saved.hidden{
+  display: none;
+  }
+#puzzle_save_option.hidden{
+  display:none;
+}
+#exercise_form h1, .exercise_form_title1, .exercise_form_title2, .exercise_form_title3{
+  width: 530px;
+  height: 50px;
+  text-align: center;
+  background: #bbff99;
+  border-bottom: 3px solid;
+  border-color: #c6d880;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#exercise_form_mootools h1{
+  width: 430px;
+  height: 50px;
+  text-align: center;
+  }
+#exercise_form h2, #exercise_form_mootools h2{
+  font-size: 1.3em;
+  font-weight:bold;
+  margin-left:35px;
+  color: #000000!important;
+  }
+#exercise_form p{
+  margin-left:35px;
+}
+#exercise_form h3, #exercise_form_mootools h3{
+  font-size: 1.3em;
+  font-weight: bold;
+  }
+#new_exercise input{
+  float: left!important;
+  }
+#timesUp_form{
+
+  overflow: auto;
+  display: table;
+  position: relative;
+  }
+#timesUp_form h1{
+  width: 530px;
+  height: 50px;
+  text-align: center;
+  background: #fbe3e4;
+  border-bottom: 3px solid;
+  border-color: #fbc2c4;
+  }
+#timesUp_form h2{
+  font-size: 1.2em;
+  color: #000000!important;
+  }
+.exit_game{
+  text-align: center;
+  font-size: 1.1em;
+  background:transparent;
+  color: #000;
+  width: 160px;
+  height: 42px;
+  float: left;
+  }
+.footnote {
+  font-size: .9em;
+  position:relative;
+  bottom: 0;
+  float: left;
+  }
+.vert_game{
+  height:500px;
+  width:560px;
+  display:table;
+  background-color: #34489E;
+}
+.vert_game_left{
+  height:500px;
+  width:280px;
+  background-color:#E6E6E6;
+  float:left;
+  }
+.vert_game_left p{
+  font-size: 90%;
+  }
+.vert_game_right{
+  height:500px;
+  width:280px;
+  background-color:#34489E;
+  float:right;
+  }
+.sortable1, .sortable2 {
+  list-style-type: none;
+  margin: 0; padding: 0;
+  float: left;
+  margin-right: 10px;
+  }
+.sortable1 li, .sortable2 li {
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 120px;
+  }
+td{
+font-family: nunito;
+width:143px;
+height:38px;
+}
+
+.boxgrid{
+  font-size: 1.0em;
+  width: 204px;
+  height: 150px;
+  float:left;
+  background:#0E2A21;
+  overflow: hidden;
+  position: relative;
+}
+
+.boxgrid p{
+  margin-left: 5px;
+}
+#timeoutDiv{
+  font-size: 1.9em;
+  text-align: center;
+  width: 246px;
+	height: 160px;
+	float:left;
+	background: red;
+	border: solid 6px #DCE2D9;
+	overflow: hidden;
+	position: relative;
+	opacity: 0;
+	}
+.boxcaption{
+  text-align: center;
+  font-size: 2.2em;
+  padding-top: 50px;
+  background-color: #0E2A21;
+	float: left;
+	position: absolute;
+	background: #000;
+	height: 220px;
+	width: 100%;
+
+ 	}
+.captionfull .boxcaption {
+ 	top: 260;
+ 	left: 0;
+ }
+ .caption .boxcaption {
+ 	top: 220;
+ 	left: 0;
+ }
+.ui-progressbar { height:2em; text-align: left; }
+.ui-progressbar .ui-progressbar-value {margin: -1px; height:100%;background:#2F2F2F; }
+
+.js .nojs {
+  display:none;
+}
+
+.noJS{
+  text-align:center;
+}
+.noJS h1{
+  color:yellow;
+  font-weight:bold;
+}
+#doc {
+  text-align:left;
+  font-size:2em;
+  width:40em;
+  margin:0 auto;
+}
+
+#sudoku_header {
+  text-align:center;
+  margin:2em 0;
+}
+
+#sudoku_header * {
+  margin:0;
+}
+
+#sudoku_header h1 {
+  color:#333;
+}
+
+#sudoku_header h1,h2,h3 {
+  letter-spacing:-1px;
+}
+
+.source {
+  font-size:.8em;
+  color:#000;
+}
+
+pre {
+  font-size:.9em;
+  background-color:#ffc;
+overflow-x:auto;
+}
+
+pre em {
+  color:#009;
+}
+
+pre b {
+  color:#900;
+}
+
+pre strong {
+  color:#099;
+}
+
+pre i,pre i * {
+  color:#090;
+}
+
+#sudoku_content {
+  text-align:center;
+}
+
+.sudoku {
+  border: 3px solid;
+  border-color:#000;
+  width:25em;
+  text-align:left;
+  margin:0 auto;
+  width: 300px;
+  height: 240px;
+  float: left;
+  margin-left: 10px;
+}
+
+.sudoku tr {
+  border:1px solid #ccc;
+}
+.sudoku td {
+  border:1px solid #ccc;
+  width:11%;
+  text-align:center;
+  background:transparent;
+  padding:0;
+}
+
+.sudoku .r3 td,.sudoku .r6 td {
+  border-top:2px solid #000;
+}
+
+.sudoku input {
+  width:100%;
+  text-align:center;
+  font-size:2em;
+  border:0 none;
+  background: #0E2A21;
+
+}
+.sodoku input:focus {
+color:#000;
+}
+
+.sudoku input.disabled {
+color:#555;
+font-weight:700;
+}
+
+.sudoku.col0 .c0 input,.sudoku.col1 .c1 input,.sudoku.col2 .c2 input,.sudoku.col3 .c3 input,.sudoku.col4 .c4 input,.sudoku.col5 .c5 input,.sudoku.col6 .c6 input,.sudoku.col7 .c7 input,.sudoku.col8 .c8 input {
+background:#000000;
+}
+
+.sudoku.row0 .r0,.sudoku.row1 .r1,.sudoku.row2 .r2,.sudoku.row3 .r3,.sudoku.row4 .r4,.sudoku.row5 .r5,.sudoku.row6 .r6,.sudoku.row7 .r7,.sudoku.row8 .r8 {
+background:#27461F;
+}
+
+.sudoku.box00 .s0 .c0,.sudoku.box00 .s0 .c1,.sudoku.box00 .s0 .c2,.sudoku.box01 .s0 .c3,.sudoku.box01 .s0 .c4,.sudoku.box01 .s0 .c5,.sudoku.box02 .s0 .c6,.sudoku.box02 .s0 .c7,.sudoku.box02 .s0 .c8,.sudoku.box10 .s1 .c0,.sudoku.box10 .s1 .c1,.sudoku.box10 .s1 .c2,.sudoku.box11 .s1 .c3,.sudoku.box11 .s1 .c4,.sudoku.box11 .s1 .c5,.sudoku.box12 .s1 .c6,.sudoku.box12 .s1 .c7,.sudoku.box12 .s1 .c8,.sudoku.box20 .s2 .c0,.sudoku.box20 .s2 .c1,.sudoku.box20 .s2 .c2,.sudoku.box21 .s2 .c3,.sudoku.box21 .s2 .c4,.sudoku.box21 .s2 .c5,.sudoku.box22 .s2 .c6,.sudoku.box22 .s2 .c7,.sudoku.box22 .s2 .c8 {
+background:#27461F;
+}
+.sudoku input.colconflict,.sudoku input.rowconflict,.sudoku input.boxconflict {
+color:red;
+}
+.sudoku input{
+  width: 100px;
+  height: 80px;
+  }
+td.c10{
+  background-color: #0E2637;
+  opacity:0.8;
+  }
+td.b10 {
+  opacity:0.8;
+  }
+#doc2 {
+  text-align:left;
+  font-size:2em;
+}
+input#c02, input#c03, input#c4, input#c5, input#c7, input#c8{
+color: white;
+}
+.sudoku2 {
+
+  width:25em;
+  text-align:left;
+  margin:0 auto;
+  width: 300px;
+  float: left;
+  margin-left: 10px;
+}
+
+.sudoku2 tr {
+  border:1px solid #ccc;
+}
+
+.sudoku2 td {
+  border:1px solid #ccc;
+  width:11%;
+  text-align:center;
+  background:transparent;
+  padding:0;
+}
+
+.sudoku2 .r3 td,.sudoku .r6 td {
+  border-top:2px solid #000;
+}
+
+.sudoku2 input {
+  width:100%;
+  text-align:center;
+  font-size:2em;
+  border:0 none;
+  background: #27461F;
+
+}
+.sodoku2 input:focus {
+color:#000;
+}
+
+.sudoku2 input.disabled {
+color:#555;
+font-weight:700;
+}
+
+.sudoku2.col0 .x1, .x2, .x3, .x4, .x5, .x6, .x7, .x8, .c0 input,.sudoku.col1 .c1 input,.sudoku.col2 .c2 input,.sudoku.col3 .c3 input,.sudoku.col4 .c4 input,.sudoku.col5 .c5 input,.sudoku.col6 .c6 input,.sudoku.col7 .c7 input,.sudoku.col8 .c8 input {
+background:#000000;
+}
+
+.sudoku2.row0 .r0,.sudoku.row1 .r1,.sudoku.row2 .r2,.sudoku.row3 .r3,.sudoku.row4 .r4,.sudoku.row5 .r5,.sudoku.row6 .r6,.sudoku.row7 .r7,.sudoku.row8 .r8 {
+background:#27461F;
+}
+
+.sudoku2.box00 .x1, .x2, .x3, .x4, .x5, .x6, .x7, .x8, .s0 .c0,.sudoku.box00 .s0 .c1,.sudoku.box00 .s0 .c2,.sudoku.box01 .s0 .c3,.sudoku.box01 .s0 .c4,.sudoku.box01 .s0 .c5,.sudoku.box02 .s0 .c6,.sudoku.box02 .s0 .c7,.sudoku.box02 .s0 .c8,.sudoku.box10 .s1 .c0,.sudoku.box10 .s1 .c1,.sudoku.box10 .s1 .c2,.sudoku.box11 .s1 .c3,.sudoku.box11 .s1 .c4,.sudoku.box11 .s1 .c5,.sudoku.box12 .s1 .c6,.sudoku.box12 .s1 .c7,.sudoku.box12 .s1 .c8,.sudoku.box20 .s2 .c0,.sudoku.box20 .s2 .c1,.sudoku.box20 .s2 .c2,.sudoku.box21 .s2 .c3,.sudoku.box21 .s2 .c4,.sudoku.box21 .s2 .c5,.sudoku.box22 .s2 .c6,.sudoku.box22 .s2 .c7,.sudoku.box22 .s2 .c8 {
+background:#27461F;
+}
+td.x1, td.x2, td.x3, td.x4, td.x5, td.x6, td.x7, td.x8{
+width: 65px!important;
+}
+.sudoku2 input.colconflict,.sudoku input.rowconflict,.sudoku input.boxconflict {
+color:red;
+}
+.sudoku2 input{
+  width: 57px;
+  height: 80px;
+  }
+input#c10, input#c12, input#c13, input#c14, input#c16{
+  color:#fff
+}
+input#c14.disabled{
+color:#000;
+}
+.puzzle_show_left, .puzzle_show_left2, .puzzle_show_left3, .puzzle_show_left4, .puzzle_show_left5{
+width:400px;
+background:#F5F5F5;
+float:left;
+border: 1px solid;
+}
+.puzzle_show_right, .puzzle_show_right2, .puzzle_show_right3, .puzzle_show_right4, .puzzle_show_right5{
+width:400px;
+background:#F5F5F5;
+float:right;
+border: 1px solid;
+}
+#demo_score1, #demo_score2, #demo_score3, #terrible_score1, #terrible_score2, #terrible_score3, #terrible_score4, #terrible_score5, #noire_score1, #noire_score2, #noire_score3, #machina_score1, #machina_score2, #machina_score3{
+display:none;
+}
+#noire_attempts, #noire_attempts2, #noire_attempts3, #noire_attempts4, #noire_attempts5{
+display:none;
+}
+#noire_resets, #noire_resets2, #noire_resets3, #noire_resets4, #noire_resets5{
+display:none;
+}
