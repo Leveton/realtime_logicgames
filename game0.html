@@ -1,17 +1,10 @@
-<link href="assets/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="assets/css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="assets/css/jquery.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="assets/css/jquery.ui.core.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="assets/css/jquery.ui.theme.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="assets/css/base.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="assets/css/layout.css" media="screen" rel="stylesheet" type="text/css" />
-<link href="assets/css/exercises.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
 <script type="text/javascript" src="assets/js/underscore.js"></script>
 <script type="text/javascript" src="assets/js/backbone.js"></script>
-<script type="text/javascript" src="assets/js/widgetDialogPositionProgressbar.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.ui.widget.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.ui.mouse.min.js"></script>
 <script type="text/javascript" src="assets/js/draggableDroppable.min.js"></script>
 <script type="text/javascript" src="assets/js/d3.min.js"></script>
@@ -46,9 +39,9 @@
 </div>
 </div>
 <div style="clear:both;">
-<button class = "btn" onclick="compareAnswers(boxes, allboxes2, '#demo_frame', 'game2', 'game1', '#score_right_p');">check</button>
+<button class = "btn" onclick="compareAnswers(boxes, allboxes2, '#demo_frame', 'show_results', 'game0', '#score_right_p');">check</button>
 
-<button class = "btn" style = "float:right;" onclick = "resetGame('#demo_frame', 'game1', '#score_right p', boxes);" >reset</button>
+<button class = "btn" style = "float:right;" onclick = "resetGame('#demo_frame', 'game0', '#score_right p', boxes);" >reset</button>
 </div>
 </div>
 

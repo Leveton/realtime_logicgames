@@ -46,30 +46,11 @@ app.get('/game0', function(req, res){
   });
 });
 
-app.get('/game1', function(req, res){
-  client.get("string key", function(err, reply){
-    puzzle_result = reply;
-    res.render('game1.html', {current_user:puzzle_result});
-  });
-});
-
-app.get('/game2', function(req, res){
-  res.render('game2.html');
-});
-
 app.get('/show_results', function(req, res){
   client.hset("hash key2", "hashtest 3", "mike", redis.print);
   client.hget("hash key", "hashtest 1", function(err, reply){
     puzzle_result = reply;
     res.render('show_results.html', {current_user:puzzle_result});
-  });
-});
-
-app.get('/show_results_temp', function(req, res){
-  client.hset("hash key2", "hashtest 3", "mike", redis.print);
-  client.hget("hash key", "hashtest 1", function(err, reply){
-    puzzle_result = reply;
-    res.render('show_results_temp.html', {current_user:puzzle_result});
   });
 });
 
