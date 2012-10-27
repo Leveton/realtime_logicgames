@@ -79,10 +79,12 @@ function resetGame(a, b, c, d) {
 }
 function compareAnswers(h, g, f, e, n, l) {
     if ($(h).compare(g) == true) {
-        $(f).load(e);
-        timeTaken2 = (450 - (timeTaken + count));
-        user_data.push(timeTaken2);
+        timeTaken = (450 - count);
+        user_data.push(timeTaken);
+        clearInterval(countdown);
+        $('#score_right_timer').hide();
         makePuzzle();
+        $(f).load(e);
     } else {
         alert("Incorrect, please try again");
         resetGame(f, n, l, h);

@@ -31,8 +31,14 @@ app.engine('html', require('ejs').renderFile);
         //client.quit();
     });
 
+app.post('/puzzles', function(req, res){
+  console.log(req.body.user_id);
+  user_temp = req.body.user_id;
+  client.hset("hash key3", "hashtest 4", user_temp, redis.print);
+});
+
 app.get('/', function(req, res){
-  client.hset("hash key2", "hashtest 3", "mike", redis.print);
+  //client.hset("hash key2", "hashtest 3", "mike", redis.print);
   client.hget("hash key", "hashtest 1", function(err, reply){
     puzzle_result = reply;
     res.render('game0.html', {current_user:puzzle_result});
@@ -48,16 +54,10 @@ app.get('/game0', function(req, res){
 
 app.get('/show_results', function(req, res){
   client.hset("hash key2", "hashtest 3", "mike", redis.print);
-  client.hget("hash key", "hashtest 1", function(err, reply){
+  client.hget("hash key3", "hashtest 4", function(err, reply){
     puzzle_result = reply;
-    res.render('show_results.html', {current_user:puzzle_result});
+    res.render('show_results.html', {current_user2:puzzle_result});
   });
-});
-
-app.post('/puzzles', function(req, res){
-  console.log(req.body.user_id);
-  //console.log(res.title);
-  //console.log(req.title);
 });
 
 var port = process.env.PORT || 4000;
