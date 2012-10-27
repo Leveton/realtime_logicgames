@@ -37,11 +37,15 @@ app.post('/puzzles', function(req, res){
   client.hset("hash key3", "hashtest 4", user_temp, redis.print);
 });
 
+app.post('/username', function(req, res){
+  res.render('game0.html', {current_user:req.body.username});
+});
+
 app.get('/', function(req, res){
   //client.hset("hash key2", "hashtest 3", "mike", redis.print);
   client.hget("hash key", "hashtest 1", function(err, reply){
     puzzle_result = reply;
-    res.render('game0.html', {current_user:puzzle_result});
+    res.render('index.html', {current_user:puzzle_result});
   });
 });
 

@@ -5,7 +5,7 @@ $(function(){
     defaults: function() {
       return {
         user_id: '64',
-        title: 'Quarterback1',
+        title: 'Russian Dolls',
         time_spent: 'ok',
         attempts: '2',
         hint_used: '0',
