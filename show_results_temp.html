@@ -1,7 +1,33 @@
+<link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+<script type="text/javascript" src="assets/js/underscore.js"></script>
+<script type="text/javascript" src="assets/js/backbone.js"></script>
+<script type="text/javascript" src="assets/js/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="assets/js/draggableDroppable.min.js"></script>
+<script type="text/javascript" src="assets/js/d3.min.js"></script>
+<script type="text/javascript" src="assets/js/game0.js"></script>
+<script type="text/javascript" src="assets/js/backbonePuzzles.js"></script>
+
 <link href="assets/css/D3.css" media="screen" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="assets/js/d3Puzzles.js"></script>
 
-<div id = 'demo_frame'>
+<script>
+$(function() {
+    
+        timeTaken = (450 - count);
+        user_data.push(timeTaken);
+        clearInterval(countdown);
+        $('#score_right_timer').hide();
+       d3_charts('.puzzle_show_left','.user_y_axis', '.puzzle_show_right', '.prepcloud_y_axis', ave_data, y_time_data, user_data);
+d3_charts('.puzzle_show_left2','.user_y_axis2', '.puzzle_show_right2', '.prepcloud_y_axis2', ave_attempts, y_attempt_data, attempts);
+d3_charts('.puzzle_show_left3','.user_y_axis3', '.puzzle_show_right3', '.prepcloud_y_axis3', ave_resets, y_reset_data, resets);
+})
+</script>
+
+<div id = 'demo_frame' style = 'width:70%;height:50%;'>
 <div id = "terrible_score1">< current_user.get_puzzle_times('Quarterback1', 0) %></div>
 <div id = "terrible_score2">< current_user.get_puzzle_times('Quarterback2', 0) %></div>
 <div id = "terrible_score3">< current_user.get_puzzle_times('Quarterback3', 0) %></div>

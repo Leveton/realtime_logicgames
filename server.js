@@ -64,6 +64,14 @@ app.get('/show_results', function(req, res){
   });
 });
 
+app.get('/show_results_temp', function(req, res){
+  res.render('show_results_temp.html', {current_user2:"mike"});
+});
+
+app.get('/game0_reset', function(req, res){
+  res.render('game0_reset.html');
+});
+
 var port = process.env.PORT || 4000;
 app.listen(port);
 
