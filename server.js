@@ -11,10 +11,11 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.disable('view cache');
   app.use(express.cookieParser());
+  app.set('views', __dirname + '/');
+  app.engine('html', require('ejs').__express);
+  app.set('view engine', 'html');
+  app.set('view options', {layout: true});
  });
-
-app.set('views', __dirname + '/');
-app.engine('html', require('ejs').renderFile);
 
     client.on("error", function (err) {
         console.log("Error " + err);
@@ -38,21 +39,21 @@ app.post('/puzzles', function(req, res){
 });
 
 app.post('/username', function(req, res){
-  res.render('game0.html', {current_user:req.body.username});
+  res.render('game0', {current_user:req.body.username});
 });
 
 app.get('/', function(req, res){
   //client.hset("hash key2", "hashtest 3", "mike", redis.print);
   client.hget("hash key", "hashtest 1", function(err, reply){
     puzzle_result = reply;
-    res.render('index.html', {current_user:puzzle_result});
+    res.render('index', {current_user:puzzle_result});
   });
 });
 
 app.get('/game0', function(req, res){
   client.get("string key", function(err, reply){
     puzzle_result = reply;
-    res.render('game0.html', {current_user:puzzle_result});
+    res.render('game0', {current_user:puzzle_result});
   });
 });
 
@@ -60,7 +61,7 @@ app.get('/show_results', function(req, res){
   client.hset("hash key2", "hashtest 3", "mike", redis.print);
   client.hget("hash key3", "hashtest 4", function(err, reply){
     puzzle_result = reply;
-    res.render('show_results.html', {current_user2:puzzle_result});
+    res.render('show_results', {current_user2:puzzle_result});
   });
 });
 
@@ -69,7 +70,7 @@ app.get('/show_results_temp', function(req, res){
 });
 
 app.get('/game0_reset', function(req, res){
-  res.render('game0_reset.html');
+  res.render('game0_reset');
 });
 
 var port = process.env.PORT || 4000;
